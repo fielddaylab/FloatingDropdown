@@ -1,0 +1,53 @@
+#collapsible {
+    content: "";
+    color: #00ECD0;
+    background-color: #001E2A;
+
+    font-size: 20px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    margin: 0px;
+    padding: 15px 15px;
+    width: 275px;
+
+    position: absolute;
+    transform: translate(-50%, 0%);
+    top: 0px;
+    left: 50%;
+    z-index: 10;
+}
+
+#vault-button {
+    border: none;
+    padding: 5px;
+    margin: 0px auto 15px auto;
+    justify-self: center;
+
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    border-top-right-radius: 32px;
+    background-color: #00ECD0;
+
+    width: 200px;
+
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration: none;
+    line-height: 28px; 
+    letter-spacing: 3px;
+}
+
+.content {
+    color: white;
+    text-decoration: none;
+
+    /* This is for expanding/collapsing content */
+    display: none;
+    overflow: hidden;
+}
+
+p {
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 400;
+}

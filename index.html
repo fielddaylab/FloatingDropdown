@@ -1,12 +1,10 @@
-<template id="floating-dropdown">    
-
+<template id="floating-dropdown">
     <div id="collapsible">
-        <!-- TODO: at some point these could be slots -->
         <slot name="header"><h2>Header</h2></slot>
         <p class="content"><slot name="desc">Description Here</slot></p>
         <a href="https://vault.fielddaylab.wisc.edu/" target="_blank" class="content">
             <button id="vault-button">
-                <slot name="button-label">Label</slot>
+                <slot name="button-label">Press Me</slot>
             </button>
         </a>
     </div>

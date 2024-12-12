@@ -1,9 +1,9 @@
 # FloatingDropdown
 Simple reusable web component for web games linking to the [Vault](https://vault.fielddaylab.wisc.edu/)
 
-This repository houses a reusable html component for the Vault floating dropdown on free browser-based games. There are two pieces used for this component: 
+This repository houses a reusable HTML component for the Vault floating dropdown on free browser-based games. There are two pieces used for this component: 
 1. The HTML template used to display the component on the dom 
-2. the Unity javascript plugin to be used to remove the buttom after exitting the title screen.
+2. the Unity javascript plugin to be used to remove the button after exiting the title screen.
 
 ## 1. Adding the Component
 This example illustrates how this component can be added to a project

@@ -1,3 +1,13 @@
+@property --left-offset {
+  syntax: "<length-percentage>";
+  inherits: true;
+  initial-value: 50%;
+}
+
+:host {
+  --left-offset: 50%;
+}
+
 #header {
   content: "";
   position: absolute;
@@ -6,7 +16,7 @@
   pointer-events: none;
 
   top: 16px;
-  left: 50%;
+  left: var(--left-offset);
   z-index: 100;
 }
 
@@ -31,7 +41,8 @@
   transform: translate(-50%, -75%);
   /* transform: translate(-50%, 0%); */
   top: 0px;
-  left: 50%;
+  /* left: 50%; */
+  left: var(--left-offset);
   z-index: 10;
 
   align-content: end;

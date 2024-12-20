@@ -18,20 +18,39 @@ This example illustrates how this component can be added to a project
 
 This element uses ***slots*** to make the component more flexible. If you are unfamiliar with slots, you can read more [here](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_templates_and_slots#adding_flexibility_with_slots)
 
-Example of Template:
+Example template use:
 ```javascript
 <body>
     <floating-dropdown>
-        <style> /* Add custom fonts here */ </style>
-        <img slot="header" src="/path/to/header/image" alt="Vault Games Library" width="250px">
+        <style>
+            /* custom styles here */
+        </style>
+        <img slot="header" src="FloatingDropdown/vault-library-logo.png" alt="Vault Games Library" width="250px">
         <span slot="desc" class="content">
-            Put the body text here
+            Field Day presents the largest collection of
+            <span style="color:#00ECD0">FREE</span>
+            learning games on the web.
         </span>
-        <span slot="button-label">
-            Put button label here
+        <span slot="button-label" class="content">
+            OPEN VAULT
         </span>
     </floating-dropdown>
     <div id="BrainPOPsnapArea">
 ...
+```
 
+## 2. Modifying the component
+
+The Vault component is designed to be adjusted across different games. Using a custom style tag (see example from step 1) you can easily modify these parameters with the following custom properties:
+
+``--left-offset`` : Controls the horizontal position of the dropdown. The dropdown is controlled by an offset from the left of the screen that uses a "<length-percentage>" value.
+
+``--custom-font`` : Defines the value used for the font-family parameter of the body of the dropdown. Accepts any "<string>" value 
+
+Example:
+```javascript
+    floating-dropdown {
+        --custom-font: "brandon-grotesque";
+        --left-offset: 65%;
+    }
 ```

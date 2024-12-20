@@ -4,8 +4,15 @@
   initial-value: 50%;
 }
 
+@property --custom-font {
+  syntax: "<string>";
+  inherits: true;
+  initial-value: "brandon-grotesque";
+}
+
 :host {
   --left-offset: 50%;
+  --custom-font: "brandon-grotesque";
 }
 
 #header {
@@ -115,6 +122,6 @@ p.content {
   color: white;
   text-decoration: none;
 
-  font-family: "brandon-grotesque", sans-serif;
+  font-family: var(--custom-font), sans-serif;
   font-size: 24px;
 }

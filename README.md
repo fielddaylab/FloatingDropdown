@@ -25,7 +25,7 @@ Example template use:
         <style>
             /* custom styles here */
         </style>
-        <img slot="header" src="FloatingDropdown/vault-library-logo.png" alt="Vault Games Library" width="250px">
+        <img slot="header" src="FloatingDropdown/vault-library-logo.png" alt="Vault Games Library">
         <span slot="desc" class="content">
             Field Day presents the largest collection of
             <span style="color:#00ECD0">FREE</span>
@@ -47,10 +47,13 @@ The Vault component is designed to be adjusted across different games. Using a c
 
 ``--custom-font`` : Defines the value used for the font-family parameter of the body of the dropdown. Accepts any "<string>" value 
 
+``--scale-factor`` : Allows the size of the entire dropdown to be altered. Accepts any "<length-percentage>" value.
+
 Example:
 ```javascript
     floating-dropdown {
         --custom-font: "brandon-grotesque";
         --left-offset: 65%;
+        --scale-factor: 0.9;
     }
 ```

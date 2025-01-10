@@ -10,9 +10,16 @@
 	initial-value: "brandon-grotesque";
 }
 
+@property --scale-factor {
+	syntax: "<length-percentage>";
+	inherits: true;
+	initial-value: 0.9;
+}
+
 :host {
 	--left-offset: 50%;
 	--custom-font: "brandon-grotesque";
+	--scale-factor: 1;
 }
 
 #header {
@@ -30,12 +37,14 @@
 		max-width: 250px;
 	}
 
+	zoom: var(--scale-factor);
+
 	@media (width <= 1200px) {
-		zoom: 0.75;
+		zoom: calc(.75 * var(--scale-factor));
 	}
 
 	@media (width <= 900px) {
-		zoom: 0.5;
+		zoom: calc(.5 * var(--scale-factor));
 	}
 }
 
@@ -81,6 +90,7 @@
 		transition: 0.5s ease-in;
 	}
 
+	zoom: var(--scale-factor);
 	@media (width <= 1250px) {
 		zoom: 0.75;
 	}

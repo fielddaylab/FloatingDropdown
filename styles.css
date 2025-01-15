@@ -91,7 +91,7 @@
 	}
 
 	zoom: var(--scale-factor);
-	@media (width <= 1250px) {
+	@media (width <= 1200px) {
 		zoom: 0.75;
 	}
 	@media (width <= 900px) {
